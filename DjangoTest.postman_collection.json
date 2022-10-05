@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "ce177549-6171-4b9c-a2d1-5099041c58f4",
+		"name": "DjangoTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "abhishek.chauhan@phando.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						},
+						{
+							"key": "first_name",
+							"value": "Abhay",
+							"type": "default"
+						},
+						{
+							"key": "last_name",
+							"value": "Chauhan",
+							"type": "default"
+						},
+						{
+							"key": "address",
+							"value": "Noida sector 3 Up",
+							"type": "default"
+						},
+						{
+							"key": "phone_number",
+							"value": "7275416963",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/allUser/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"allUser",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "emailSearch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/emailSearch/?search=abhishek.chauhan@phando.com",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"emailSearch",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "abhishek.chauhan@phando.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nameSearch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/nameSearch/?search=",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"nameSearch",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
